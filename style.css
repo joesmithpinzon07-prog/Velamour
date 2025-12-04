@@ -1,9 +1,14 @@
 body{margin:0;font-family:serif;background:#faf7f2;color:#333;}
-header{padding:20px;text-align:center;border-bottom:1px solid #ddd;}
-.logo{font-size:38px;font-weight:700;letter-spacing:2px;color:#b89b5e;}
-.hero{height:60vh;display:flex;align-items:center;justify-content:center;
-background:url('assets/hero.jpg') center/cover no-repeat;color:white;text-shadow:0 0 10px #000;}
-.catalogo{display:flex;gap:20px;justify-content:center;padding:40px;}
-.item{background:white;padding:15px;border-radius:12px;box-shadow:0 4px 10px rgba(0,0,0,0.1);}
-.item img{width:200px;border-radius:10px;}
-footer{text-align:center;padding:20px;color:#555;margin-top:30px;}
+header{text-align:center;padding:25px;border-bottom:1px solid #e5e5e5;}
+.logo{font-size:42px;color:#b89b5e;font-weight:700;}
+.hero{height:55vh;display:flex;align-items:center;justify-content:center;
+background:url('assets/hero.jpg') center/cover no-repeat;color:white;font-size:40px;text-shadow:0 0 15px #000;}
+.catalogo{display:flex;gap:25px;justify-content:center;padding:50px;}
+.item{background:white;padding:15px;border-radius:14px;box-shadow:0 6px 18px rgba(0,0,0,0.1);text-decoration:none;color:#333;transition:.3s;}
+.item:hover{transform:translateY(-8px);box-shadow:0 10px 22px rgba(0,0,0,0.15);}
+.item img{width:230px;border-radius:12px;}
+footer{text-align:center;padding:20px;margin-top:40px;color:#666;}
+.producto{max-width:900px;margin:auto;padding:40px;text-align:center;}
+.producto img{width:350px;border-radius:12px;box-shadow:0 5px 15px rgba(0,0,0,0.2);}
+.btn{background:#b89b5e;color:white;padding:15px 25px;margin-top:20px;display:inline-block;border-radius:8px;text-decoration:none;font-size:20px;}
+.btn:hover{opacity:.8;}
