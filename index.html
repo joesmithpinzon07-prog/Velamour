@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Velámour – Accesorios para Parejas</title>
+
+    <link rel="stylesheet" href="estilo.css" />
+
+    <style>
+        body {
+            background: #fff;
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            color: #333;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            background: linear-gradient(to bottom, #ffb6d9, #ffffff);
+        }
+
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            color: #d4af37; /* dorado */
+            margin: 0;
+        }
+
+        nav {
+            margin-top: 20px;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #d4af37;
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .btn-catalogo {
+            background: #ff6fb8;
+            color: white;
+            padding: 14px 28px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: 600;
+            display: inline-block;
+            transition: 0.2s;
+        }
+
+        .btn-catalogo:hover {
+            transform: scale(1.05);
+            opacity: 0.9;
+        }
+
+        .seccion {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .seccion h2 {
+            font-size: 2rem;
+            color: #d4af37;
+            margin-bottom: 20px;
+        }
+
+        .productos-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .producto {
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 0 10px rgba(255, 182, 219, 0.4);
+            padding: 10px;
+            transition: 0.2s;
+        }
+
+        .producto:hover {
+            transform: translateY(-5px);
+        }
+
+        .producto img {
+            width: 100%;
+            border-radius: 12px;
+        }
+
+        footer {
+            background: #ffb6d9;
+            padding: 20px;
+            text-align: center;
+            color: #333;
+            margin-top: 40px;
+        }
+
+        .social a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #d4af37;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h1>Velámour</h1>
+        <nav>
+            <a href="#catalogo">Catálogo</a>
+            <a href="#cuidados">Cuidados</a>
+            <a href="#asesor">Asesor</a>
+        </nav>
+    </header>
+
+    <!-- HERO -->
+    <div class="hero">
+        <a href="#catalogo" class="btn-catalogo">Ver Catálogo</a>
+    </div>
+
+    <!-- SECCIÓN DE CATÁLOGO -->
+    <section class="seccion" id="catalogo">
+        <h2>Catálogo de Accesorios</h2>
+
+        <div class="productos-grid">
+            <a class="producto" href="producto1.html">
+                <img src="activos/anillo1.jpg" alt="Anillo 1">
+                <p>Anillos</p>
+            </a>
+
+            <a class="producto" href="producto2.html">
+                <img src="activos/pulsera1.jpg" alt="Pulsera 1">
+                <p>Pulseras</p>
+            </a>
+
+            <a class="producto" href="producto3.html">
+                <img src="activos/collar1.jpg" alt="Collar 1">
+                <p>Collares</p>
+            </a>
+        </div>
+    </section>
+
+    <!-- SECCIÓN DE CUIDADOS -->
+    <section class="seccion" id="cuidados">
+        <h2>Cuidados de tus Accesorios</h2>
+        <p>
+            Para que tus piezas brillen siempre:
+            <br><br>
+            ✨ Evita perfumes directamente sobre las piezas.<br>
+            ✨ No duermas con los accesorios puestos.<br>
+            ✨ Guárdalos en un lugar seco.<br>
+            ✨ Límpialos con un paño suave después de usarlos.<br>
+        </p>
+    </section>
+
+    <!-- ASESOR -->
+    <section class="seccion" id="asesor">
+        <h2>Habla con un asesor</h2>
+        <a class="btn-catalogo" href="https://wa.me/573508599595" target="_blank">
+            WhatsApp 3508599595
+        </a>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="social">
+            <a href="https://www.instagram.com/accesorios_parejas_velamour/" target="_blank">Instagram</a>
+            <a href="https://www.facebook.com/profile.php?id=61584786234534" target="_blank">Facebook</a>
+        </div>
+        <p>© 2025 Velámour. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
