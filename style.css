@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #fdf8f3;
+  color: #333;
+  text-align: center;
+}
+
+header {
+  padding: 40px 20px;
+  background: #ffffff;
+  border-bottom: 1px solid #eee;
+}
+
+.hero {
+  padding: 80px 20px;
+}
+
+button {
+  padding: 14px 28px;
+  border: none;
+  border-radius: 6px;
+  background: #d88fb6;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
