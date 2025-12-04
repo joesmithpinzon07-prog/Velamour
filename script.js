@@ -1,1 +1,1 @@
-console.log("Velámour activo ✨");
+console.log("Velámour listo");
