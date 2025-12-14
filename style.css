@@ -1,0 +1,175 @@
+/* ====== RESET ====== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", system-ui, sans-serif;
+  background: #fff;
+  color: #333;
+  line-height: 1.5;
+}
+
+/* ====== HEADER ====== */
+.header {
+  text-align: center;
+  padding: 30px 20px;
+  background: #fde4ee;
+}
+
+.logo {
+  width: 90px;
+  margin-bottom: 10px;
+}
+
+.titulo {
+  font-size: 32px;
+  letter-spacing: 3px;
+  color: #c9a24d;
+}
+
+.slogan {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+.btn-principal {
+  display: inline-block;
+  padding: 14px 26px;
+  border-radius: 30px;
+  background: #e91e63;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* ====== INFO ====== */
+.info {
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.info h2 {
+  margin-bottom: 10px;
+}
+
+/* ====== CATÁLOGO ====== */
+.catalogo {
+  padding: 40px 20px;
+}
+
+.catalogo h2 {
+  text-align: center;
+  margin-bottom: 6px;
+}
+
+.catalogo-sub {
+  text-align: center;
+  color: #777;
+  margin-bottom: 30px;
+}
+
+/* GRID BASE */
+.grid-productos {
+  display: grid;
+  gap: 24px;
+}
+
+/* CARD PRODUCTO */
+.producto {
+  background: #fff;
+  border-radius: 18px;
+  padding: 18px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.producto img {
+  width: 100%;
+  border-radius: 14px;
+  margin-bottom: 14px;
+}
+
+.producto h3 {
+  margin-bottom: 6px;
+}
+
+.desc {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.precio {
+  display: block;
+  font-weight: bold;
+  font-size: 18px;
+  color: #e91e63;
+  margin-bottom: 12px;
+}
+
+.btn-wsp {
+  display: inline-block;
+  padding: 12px 20px;
+  border-radius: 24px;
+  background: #25d366;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* PRÓXIMAMENTE */
+.proximamente {
+  opacity: 0.6;
+}
+
+.estado {
+  font-weight: 600;
+  color: #b58bb2;
+}
+
+/* ====== FOOTER ====== */
+.footer {
+  background: #f8f8f8;
+  padding: 25px 20px;
+  text-align: center;
+}
+
+.redes a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #e91e63;
+  font-weight: 600;
+}
+
+.copy {
+  margin-top: 10px;
+  font-size: 13px;
+  color: #777;
+}
+
+/* ====== RESPONSIVE ====== */
+
+/* CELULAR */
+@media (max-width: 768px) {
+  .grid-productos {
+    grid-template-columns: 1fr;
+  }
+
+  .btn-wsp,
+  .btn-principal {
+    width: 100%;
+  }
+}
+
+/* COMPUTADOR */
+@media (min-width: 769px) {
+  .grid-productos {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+
