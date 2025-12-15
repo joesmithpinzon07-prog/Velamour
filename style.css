@@ -66,57 +66,68 @@ body {
 }
 
 /* =========================
-   CATALOGO ORGANIZADO EN PC
+   CATALOGO CORRECTO
    ========================= */
 
 .catalogo {
   max-width: 1200px;
-  margin: 0 auto;
-  padding: 40px 16px;
+  margin: auto;
+  padding: 40px 20px;
 }
 
 .grid-productos {
   display: grid;
-  grid-template-columns: 1fr;
-  gap: 24px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
 }
 
-/* SOLO PARA COMPUTADOR */
-@media (min-width: 1024px) {
+/* TARJETA */
+.producto {
+  background: #fff3f6;
+  border-radius: 18px;
+  padding: 16px;
+  text-align: center;
+}
 
+/* IMAGEN */
+.producto img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 14px;
+}
+
+/* TEXTO */
+.producto h3 {
+  font-size: 1.05rem;
+  margin: 12px 0 4px;
+}
+
+.producto p {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.producto .precio {
+  font-weight: bold;
+  margin: 6px 0;
+}
+
+/* BOTON */
+.producto a {
+  display: block;
+  margin-top: 10px;
+  background: #25d366;
+  color: white;
+  padding: 10px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+/* 📱 CELULAR */
+@media (max-width: 768px) {
   .grid-productos {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 32px;
-  }
-
-  .producto {
-    padding: 18px;
-  }
-
-  .producto img {
-    width: 100%;
-    height: 220px;
-    object-fit: cover;
-    border-radius: 14px;
-  }
-
-  .producto h3 {
-    font-size: 1.05rem;
-    margin-top: 12px;
-  }
-
-  .producto .precio {
-    font-size: 1rem;
-  }
-
-  .producto p {
-    font-size: 0.9rem;
-  }
-
-  .producto button,
-  .producto a {
-    font-size: 0.9rem;
-    padding: 10px;
+    grid-template-columns: 1fr;
   }
 }
-
