@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Velamour | Anillos de Promesa</title>
+
+  <!-- SEO básico -->
+  <meta name="description" content="Velamour · Anillos de promesa inspirados en historias de amor. Diseños únicos, elegantes y simbólicos." />
+
+  <!-- Favicon -->
+  <link rel="icon" href="assets/logo.png" />
+
+  <style>
+    :root{
+      --rosa:#fdecef;
+      --rosa-suave:#fff5f7;
+      --dorado:#c9a24d;
+      --verde:#25d366;
+      --negro:#222;
+    }
+
+    *{box-sizing:border-box;margin:0;padding:0}
+
+    body{
+      font-family: 'Segoe UI', sans-serif;
+      background: white;
+      color: var(--negro);
+    }
+
+    header{
+      text-align:center;
+      padding:2rem 1rem;
+    }
+
+    header img{
+      width:90px;
+      margin-bottom:.5rem;
+    }
+
+    header h1{
+      letter-spacing:3px;
+      font-size:2.2rem;
+    }
+
+    header p{
+      color:var(--dorado);
+      margin-top:.5rem;
+    }
+
+    section{
+      padding:2rem 1rem;
+    }
+
+    h2{
+      text-align:center;
+      margin-bottom:2rem;
+    }
+
+    .grid{
+      display:grid;
+      gap:1.5rem;
+    }
+
+    .card{
+      background:var(--rosa-suave);
+      border-radius:18px;
+      padding:1rem;
+      text-align:center;
+      box-shadow:0 10px 25px rgba(0,0,0,.05);
+    }
+
+    .card img{
+      width:100%;
+      border-radius:14px;
+      margin-bottom:1rem;
+    }
+
+    .card h3{
+      font-size:1.05rem;
+      margin-bottom:.3rem;
+    }
+
+    .precio{
+      color:var(--dorado);
+      font-weight:bold;
+      margin:.5rem 0;
+    }
+
+    .desc{
+      font-size:.9rem;
+      margin-bottom:.5rem;
+    }
+
+    .cuidados{
+      font-size:.75rem;
+      opacity:.7;
+      margin-bottom:.8rem;
+    }
+
+    .tag{
+      background:var(--dorado);
+      color:white;
+      padding:.3rem .8rem;
+      border-radius:20px;
+      font-size:.7rem;
+      display:inline-block;
+      margin-bottom:.6rem;
+    }
+
+    .btn{
+      display:block;
+      background:#ccc;
+      color:white;
+      text-decoration:none;
+      padding:.7rem;
+      border-radius:30px;
+      font-weight:600;
+      cursor:not-allowed;
+    }
+
+    footer{
+      text-align:center;
+      padding:2rem 1rem;
+      font-size:.8rem;
+      opacity:.6;
+    }
+
+    /* Desktop */
+    @media(min-width:900px){
+      .grid{
+        grid-template-columns:repeat(3,1fr);
+        max-width:1200px;
+        margin:auto;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="assets/logo.png" alt="Velamour Logo" />
+  <h1>VELAMOUR</h1>
+  <p>Promesas que brillan para siempre</p>
+</header>
+
+<section>
+  <h2>Anillos de Promesa</h2>
+
+  <div class="grid">
+
+    <div class="card">
+      <img src="assets/anillo1.png" alt="Rapunzel Corona Multicolor">
+      <h3>Rapunzel · Corona Multicolor</h3>
+      <div class="precio">$29.000</div>
+      <p class="desc">Un diseño mágico que representa libertad, amor y promesas eternas.</p>
+      <p class="cuidados">No mojar · Evitar perfumes · Guardar en estuche</p>
+      <span class="tag">Próximamente</span>
+      <a class="btn">Disponible pronto</a>
+    </div>
+
+    <div class="card">
+      <img src="assets/anillo2.png" alt="Aladdín Clásico">
+      <h3>Aladdín · Clásico</h3>
+      <div class="precio">$29.000</div>
+      <p class="desc">Inspirado en aventuras y compromisos que desafían lo imposible.</p>
+      <p class="cuidados">No mojar · Evitar perfumes · Guardar en estuche</p>
+      <span class="tag">Próximamente</span>
+      <a class="btn">Disponible pronto</a>
+    </div>
+
+    <div class="card">
+      <img src="assets/anillo3.png" alt="Princesa y el Sapo Clásico">
+      <h3>Princesa y el Sapo · Clásico</h3>
+      <div class="precio">$29.000</div>
+      <p class="desc">El amor verdadero siempre encuentra su camino.</p>
+      <p class="cuidados">No mojar · Evitar perfumes · Guardar en estuche</p>
+      <span class="tag">Próximamente</span>
+      <a class="btn">Disponible pronto</a>
+    </div>
+
+    <div class="card">
+      <img src="assets/anillo4.png" alt="Princesa y el Sapo Cereza">
+      <h3>Princesa y el Sapo · Cereza</h3>
+      <div class="precio">$29.000</div>
+      <p class="desc">Un toque dulce que simboliza pasión y fidelidad.</p>
+      <p class="cuidados">No mojar · Evitar perfumes · Guardar en estuche</p>
+      <span class="tag">Próximamente</span>
+      <a class="btn">Disponible pronto</a>
+    </div>
+
+    <div class="card">
+      <img src="assets/anillo5.png" alt="Rapunzel Clásico">
+      <h3>Rapunzel · Clásico</h3>
+      <div class="precio">$29.000</div>
+      <p class="desc">Amor puro que crece con el tiempo.</p>
+      <p class="cuidados">No mojar · Evitar perfumes · Guardar en estuche</p>
+      <span class="tag">Próximamente</span>
+      <a class="btn">Disponible pronto</a>
+    </div>
+
+    <div class="card">
+      <img src="assets/anillo6.png" alt="Princesa y el Sapo Corazón">
+      <h3>Princesa y el Sapo · Corazón</h3>
+      <div class="precio">$29.000</div>
+      <p class="desc">Un símbolo delicado de unión y ternura.</p>
+      <p class="cuidados">No mojar · Evitar perfumes · Guardar en estuche</p>
+      <span class="tag">Próximamente</span>
+      <a class="btn">Disponible pronto</a>
+    </div>
+
+    <div class="card">
+      <img src="assets/anillo7.png" alt="Rapunzel Corazón">
+      <h3>Rapunzel · Corazón</h3>
+      <div class="precio">$29.000</div>
+      <p class="desc">Promesas hechas con amor y valentía.</p>
+      <p class="cuidados">No mojar · Evitar perfumes · Guardar en estuche</p>
+      <span class="tag">Próximamente</span>
+      <a class="btn">Disponible pronto</a>
+    </div>
+
+    <div class="card">
+      <img src="assets/anillo8.png" alt="Gato con Botas">
+      <h3>Gato con Botas</h3>
+      <div class="precio">$29.000</div>
+      <p class="desc">Un anillo atrevido para amores valientes.</p>
+      <p class="cuidados">No mojar · Evitar perfumes · Guardar en estuche</p>
+      <span class="tag">Próximamente</span>
+      <a class="btn">Disponible pronto</a>
+    </div>
+
+    <div class="card">
+      <img src="assets/anillo9.png" alt="Shrek">
+      <h3>Shrek</h3>
+      <div class="precio">$29.000</div>
+      <p class="desc">Porque el amor verdadero no es perfecto, es real.</p>
+      <p class="cuidados">No mojar · Evitar perfumes · Guardar en estuche</p>
+      <span class="tag">Próximamente</span>
+      <a class="btn">Disponible pronto</a>
+    </div>
+
+    <div class="card">
+      <img src="assets/anillo10.png" alt="Aladdín Corona">
+      <h3>Aladdín · Corona</h3>
+      <div class="precio">$29.000</div>
+      <p class="desc">Realeza, compromiso y amor eterno.</p>
+      <p class="cuidados">No mojar · Evitar perfumes · Guardar en estuche</p>
+      <span class="tag">Próximamente</span>
+      <a class="btn">Disponible pronto</a>
+    </div>
+
+    <div class="card">
+      <img src="assets/anillo11.png" alt="Hotel Transilvania">
+      <h3>Hotel Transilvania</h3>
+      <div class="precio">$29.000</div>
+      <p class="desc">Un amor diferente, auténtico y eterno.</p>
+      <p class="cuidados">No mojar · Evitar perfumes · Guardar en estuche</p>
+      <span class="tag">Próximamente</span>
+      <a class="btn">Disponible pronto</a>
+    </div>
+
+    <div class="card">
+      <img src="assets/anillo12.png" alt="Shrek Flor Giratoria">
+      <h3>Shrek · Flor Giratoria</h3>
+      <div class="precio">$29.000</div>
+      <p class="desc">Un detalle divertido que guarda una promesa sincera.</p>
+      <p class="cuidados">No mojar · Evitar perfumes · Guardar en estuche</p>
+      <span class="tag">Próximamente</span>
+      <a class="btn">Disponible pronto</a>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  © 2025 Velamour · Hecho con amor
+</footer>
+
+</body>
+</html>
+
