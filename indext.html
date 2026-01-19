@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Velamour | Joyería & Relojes</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Fuente elegante -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #0e0e0e;
+      color: #f5f5f5;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* HEADER */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 60px;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 28px;
+      letter-spacing: 2px;
+    }
+
+    nav a {
+      margin: 0 15px;
+      font-size: 14px;
+      opacity: 0.85;
+    }
+
+    nav a:hover {
+      opacity: 1;
+    }
+
+    /* HERO */
+    .hero {
+      padding: 120px 60px;
+      text-align: center;
+      background: linear-gradient(180deg, #0e0e0e, #141414);
+    }
+
+    .hero h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      max-width: 700px;
+      margin: 0 auto 40px;
+      font-size: 16px;
+      line-height: 1.6;
+      opacity: 0.85;
+    }
+
+    .hero button {
+      padding: 14px 34px;
+      background: #c6a15b;
+      border: none;
+      color: #0e0e0e;
+      font-weight: 500;
+      cursor: pointer;
+      border-radius: 30px;
+      margin: 0 10px;
+    }
+
+    .hero button:hover {
+      background: #d4b06a;
+    }
+
+    /* SECCIONES */
+    .section {
+      padding: 80px 60px;
+    }
+
+    .section h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 36px;
+      margin-bottom: 15px;
+    }
+
+    .section p {
+      max-width: 600px;
+      opacity: 0.85;
+      line-height: 1.6;
+      margin-bottom: 25px;
+    }
+
+    .section a {
+      font-size: 14px;
+      color: #c6a15b;
+    }
+
+    /* FOOTER */
+    footer {
+      padding: 40px 60px;
+      border-top: 1px solid rgba(255,255,255,0.08);
+      text-align: center;
+      font-size: 13px;
+      opacity: 0.7;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      .hero h2 {
+        font-size: 34px;
+      }
+
+      .section {
+        padding: 60px 30px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <h1>VELAMOUR</h1>
+    <nav>
+      <a href="#anillos">Anillos</a>
+      <a href="#relojes">Relojes</a>
+      <a href="#colecciones">Colecciones</a>
+      <a href="https://wa.me/57XXXXXXXXX">Contacto</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <h2>Joyería que define presencia</h2>
+    <p>
+      Piezas elaboradas con materiales de alta calidad, diseño sofisticado
+      y acabados premium. No seguimos tendencias, las hacemos elegantes.
+    </p>
+    <button onclick="location.href='#anillos'">Ver Anillos</button>
+    <button onclick="location.href='#relojes'">Ver Relojes</button>
+  </section>
+
+  <!-- ANILLOS -->
+  <section class="section" id="anillos">
+    <h3>Anillos Velamour</h3>
+    <p>
+      Fabricados en acero inoxidable de alta resistencia, con acabados pulidos
+      y diseño elegante. Ideales para uso diario o momentos especiales.
+    </p>
+    <a href="anillos.html">Explorar colección →</a>
+  </section>
+
+  <!-- RELOJES -->
+  <section class="section" id="relojes">
+    <h3>Relojes Velamour</h3>
+    <p>
+      Relojes de alta calidad con maquinaria precisa, estructura robusta
+      y una estética moderna que transmite carácter y distinción.
+    </p>
+    <a href="relojes.html">Ver relojes →</a>
+  </section>
+
+  <!-- COLECCIONES -->
+  <section class="section" id="colecciones">
+    <h3>Colecciones</h3>
+    <p>
+      Ediciones especiales pensadas para marcar momentos, no solo el tiempo.
+      Piezas que cuentan historias.
+    </p>
+    <a href="colecciones.html">Descubrir colecciones →</a>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    © 2026 Velamour · Elegancia que perdura
+  </footer>
+
+</body>
+</html>
