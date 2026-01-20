@@ -1,94 +1,107 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Velamour | Joyería & Relojes</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Inter', sans-serif;
-      background-color: #0b0b0b;
-      color: #ffffff;
-    }
-    header {
-      padding: 80px 20px;
-      text-align: center;
-    }
-    h1 {
-      font-family: 'Playfair Display', serif;
-      font-size: 48px;
-      letter-spacing: 2px;
-      margin-bottom: 10px;
-    }
-    p {
-      color: #cfcfcf;
-      max-width: 600px;
-      margin: 0 auto 40px;
-      font-size: 16px;
-    }
-    .buttons {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      flex-wrap: wrap;
-    }
-    a.button {
-      text-decoration: none;
-      padding: 14px 30px;
-      border: 1px solid #c9a24d;
-      color: #c9a24d;
-      letter-spacing: 1px;
-      transition: all 0.3s ease;
-    }
-    a.button:hover {
-      background-color: #c9a24d;
-      color: #0b0b0b;
-    }
-    section {
-      padding: 60px 20px;
-      text-align: center;
-      border-top: 1px solid #1c1c1c;
-    }
-    h2 {
-      font-family: 'Playfair Display', serif;
-      letter-spacing: 1px;
-      margin-bottom: 20px;
-    }
-    footer {
-      padding: 30px;
-      text-align: center;
-      font-size: 13px;
-      color: #777;
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Velamour | Accesorios para parejas</title>
+  <link rel="stylesheet" href="style.css"/>
 </head>
+
 <body>
 
-<header>
-  <h1>VELAMOUR</h1>
-  <p>
-    Joyería y relojes diseñados para quienes entienden que el verdadero lujo
-    no necesita explicación.
-  </p>
-  <div class="buttons">
-    <a href="anillos.html" class="button">VER ANILLOS</a>
-    <a href="relojes.html" class="button">VER RELOJES</a>
-  </div>
+<header class="header">
+  <img src="public/img/logo.png" alt="Velamour" class="logo">
+  <nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#anillos">Anillos</a>
+    <a href="#relojes">Relojes</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
 </header>
 
-<section>
-  <h2>Materiales</h2>
-  <p>
-    Acero inoxidable premium · Baño en oro 18K · Alta durabilidad ·
-    Diseños exclusivos pensados para el uso diario sin perder elegancia.
+<!-- INICIO -->
+<section id="inicio" class="hero">
+  <h1>Velamour</h1>
+  <p class="sub">
+    Accesorios para parejas que creen en los detalles,  
+    la elegancia y la conexión real.
   </p>
+
+  <p class="desc">
+    Nuestros anillos están fabricados en acero inoxidable de alta calidad.  
+    El anillo femenino es ajustable y el masculino viene en tallas específicas.  
+    Diseñados para el uso diario, resistentes y con significado.
+  </p>
+
+  <div class="hero-buttons">
+    <a href="#anillos" class="btn">Ver anillos</a>
+    <a href="#relojes" class="btn btn-outline">Ver relojes</a>
+  </div>
+</section>
+
+<!-- ANILLOS -->
+<section id="anillos" class="section">
+  <h2>Anillos de promesa</h2>
+
+  <div class="grid">
+
+    <!-- RAPUNZEL -->
+    <div class="card">
+      <img src="public/img/rapunzel.jpg" alt="Anillos Rapunzel">
+      <h3>Rapunzel – Clásico</h3>
+      <p>Anillos inspirados en Rapunzel. Unión, amor y luz.</p>
+      <span class="price">$29.000</span>
+      <span class="agotado">AGOTADO</span>
+    </div>
+
+    <!-- ALADDIN -->
+    <div class="card">
+      <img src="public/img/aladdin.jpg" alt="Anillos Aladdín">
+      <h3>Aladdín – Promesa Real</h3>
+      <p>Diseño elegante con acabado brillante.</p>
+      <span class="price">$29.000</span>
+      <a class="btn small">Comprar</a>
+    </div>
+
+    <!-- PRINCESA Y EL SAPO -->
+    <div class="card">
+      <img src="public/img/sapo.jpg" alt="Princesa y el Sapo">
+      <h3>Princesa y el Sapo</h3>
+      <p>Un símbolo de transformación y compromiso.</p>
+      <span class="price">$29.000</span>
+      <span class="proximo">PRÓXIMAMENTE</span>
+    </div>
+
+  </div>
+</section>
+
+<!-- RELOJES -->
+<section id="relojes" class="section dark">
+  <h2>Relojes & Accesorios</h2>
+
+  <div class="grid">
+
+    <div class="card">
+      <img src="public/img/reloj1.jpg" alt="Reloj premium">
+      <h3>Reloj Premium Velamour</h3>
+      <p>Diseño elegante, resistente y moderno.</p>
+      <span class="proximo">PRÓXIMAMENTE</span>
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTACTO -->
+<section id="contacto" class="contact">
+  <h2>Contacto</h2>
+  <p>Asesor personalizado vía WhatsApp</p>
+  <a class="btn" href="https://wa.me/573508599595">Hablar con asesor</a>
 </section>
 
 <footer>
-  © Velamour — Elegancia que permanece.
+  <p>© Velamour 2025 · Todos los derechos reservados</p>
 </footer>
 
 </body>
 </html>
+
