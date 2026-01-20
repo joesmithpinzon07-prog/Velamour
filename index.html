@@ -2,186 +2,194 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Velámour | Joyería & Accesorios Premium</title>
 
-<!-- FONTS -->
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<!-- TIPOGRAFÍA PREMIUM -->
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
 
 <style>
 :root{
-  --gold:#d4af37;
-  --black:#000;
-  --soft:#111;
+  --negro:#0f0f0f;
+  --dorado:#c9a24d;
+  --blanco:#ffffff;
 }
 
-*{box-sizing:border-box;}
-body{
+*{
   margin:0;
-  background:var(--black);
-  color:#fff;
-  font-family:'Inter',sans-serif;
-  scroll-behavior:smooth;
+  padding:0;
+  box-sizing:border-box;
 }
 
-/* HEADER */
+body{
+  font-family:'Poppins',sans-serif;
+  background:var(--negro);
+  color:var(--blanco);
+}
+
+/* ---------- HEADER ---------- */
 header{
-  position:fixed;
-  top:0;
-  width:100%;
-  padding:22px 60px;
   display:flex;
   justify-content:space-between;
   align-items:center;
-  background:rgba(0,0,0,.85);
-  backdrop-filter:blur(6px);
-  z-index:100;
-}
-.logo{
-  font-family:'Playfair Display',serif;
-  font-size:26px;
-  color:var(--gold);
-}
-nav a{
-  color:var(--gold);
-  margin-left:28px;
-  text-decoration:none;
-  font-weight:500;
+  padding:20px 40px;
 }
 
-/* HERO */
+header img{
+  height:50px;
+}
+
+nav a{
+  margin-left:20px;
+  color:var(--blanco);
+  text-decoration:none;
+  font-weight:300;
+}
+
+nav a:hover{
+  color:var(--dorado);
+}
+
+/* ---------- HERO ---------- */
 .hero{
-  height:100vh;
+  height:85vh;
   display:flex;
   flex-direction:column;
   justify-content:center;
   align-items:center;
   text-align:center;
-  padding:40px;
-  animation:fadeIn 1.4s ease;
+  padding:20px;
 }
+
 .hero h1{
-  font-family:'Playfair Display',serif;
-  font-size:64px;
-  margin-bottom:18px;
+  font-family:'Cormorant Garamond',serif;
+  font-size:3rem;
+  letter-spacing:2px;
+  margin-bottom:15px;
 }
+
 .hero p{
-  max-width:760px;
-  font-size:18px;
+  max-width:650px;
   opacity:.9;
 }
-.cta{
-  margin-top:35px;
+
+.hero button{
+  margin-top:30px;
+  padding:14px 40px;
+  background:transparent;
+  border:1px solid var(--dorado);
+  color:var(--dorado);
+  cursor:pointer;
+  font-size:1rem;
+  transition:.4s;
 }
-.btn{
-  border:1px solid var(--gold);
-  color:var(--gold);
-  padding:14px 34px;
-  margin:10px;
-  text-decoration:none;
-  transition:.35s;
-}
-.btn:hover{
-  background:var(--gold);
+
+.hero button:hover{
+  background:var(--dorado);
   color:#000;
 }
 
-/* SECTIONS */
+/* ---------- SECCIONES ---------- */
 section{
-  padding:120px 70px;
-}
-h2{
-  font-family:'Playfair Display',serif;
-  color:var(--gold);
-  font-size:40px;
-}
-.subtitle{
-  max-width:700px;
-  opacity:.85;
-  margin-top:12px;
+  padding:80px 40px;
 }
 
-/* GRID */
+section h2{
+  font-family:'Cormorant Garamond',serif;
+  font-size:2.5rem;
+  text-align:center;
+  margin-bottom:60px;
+  color:var(--dorado);
+}
+
+/* ---------- GRID ---------- */
 .grid{
-  margin-top:60px;
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-  gap:45px;
+  gap:40px;
+  max-width:1200px;
+  margin:auto;
 }
+
 .card{
-  background:var(--soft);
-  padding:22px;
-  border:1px solid #222;
-  transition:.4s;
+  background:#151515;
+  padding:20px;
+  text-align:center;
+  border-radius:8px;
+  transition:.5s;
 }
+
 .card:hover{
   transform:translateY(-10px);
 }
+
 .card img{
   width:100%;
-  transition:.4s;
+  border-radius:6px;
+  transition:.6s;
 }
+
 .card:hover img{
   transform:scale(1.05);
 }
+
+.card h3{
+  font-family:'Cormorant Garamond',serif;
+  margin:15px 0 10px;
+}
+
 .price{
-  color:var(--gold);
-  font-weight:600;
-  margin-top:8px;
-}
-.buy{
-  display:inline-block;
-  margin-top:15px;
-  border:1px solid var(--gold);
-  padding:10px 22px;
-  color:var(--gold);
-  text-decoration:none;
+  color:var(--dorado);
+  margin-bottom:10px;
 }
 
-/* TRUST */
-.trust{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-  gap:40px;
-  margin-top:60px;
-}
-.trust div{
-  border-left:2px solid var(--gold);
-  padding-left:18px;
+.status{
+  font-size:.85rem;
+  margin-bottom:10px;
+  opacity:.8;
 }
 
-/* WHATSAPP FLOAT */
-.whatsapp{
-  position:fixed;
-  bottom:25px;
-  right:25px;
-  background:#25D366;
+.card button{
+  padding:10px 25px;
+  border:none;
+  background:var(--dorado);
   color:#000;
-  padding:14px 22px;
-  border-radius:50px;
-  font-weight:600;
-  text-decoration:none;
+  cursor:pointer;
+  font-weight:500;
 }
 
-/* FOOTER */
+.card button:disabled{
+  background:#555;
+  color:#999;
+  cursor:not-allowed;
+}
+
+/* ---------- FOOTER ---------- */
 footer{
-  text-align:center;
   padding:40px;
-  opacity:.6;
+  text-align:center;
+  font-size:.9rem;
+  opacity:.7;
 }
 
-/* ANIMATION */
-@keyframes fadeIn{
-  from{opacity:0;transform:translateY(30px);}
-  to{opacity:1;transform:translateY(0);}
+/* ---------- RESPONSIVE ---------- */
+@media(max-width:768px){
+  header{
+    flex-direction:column;
+    gap:15px;
+  }
+  .hero h1{
+    font-size:2.2rem;
+  }
 }
 </style>
 </head>
 
 <body>
 
-<!-- HEADER -->
 <header>
-  <div class="logo">Velámour</div>
+  <img src="logo.png" alt="Velamour">
   <nav>
     <a href="#inicio">Inicio</a>
     <a href="#anillos">Anillos</a>
@@ -189,83 +197,88 @@ footer{
   </nav>
 </header>
 
-<!-- HERO -->
+<!-- INICIO -->
 <section class="hero" id="inicio">
-  <h1>Detalles que se sienten</h1>
+  <h1>Velámour</h1>
   <p>
-    Velámour es una tienda especializada en regalos para pareja.  
-    Anillos simbólicos, relojes elegantes y accesorios premium.  
-    Aquí no compras un objeto, compras una emoción.
+    Joyería y accesorios diseñados para parejas.  
+    Anillos en acero inoxidable, elegantes, resistentes y pensados para durar.
+    El anillo femenino es ajustable, el masculino viene en talla.
   </p>
-  <div class="cta">
-    <a href="#anillos" class="btn">Ver Anillos</a>
-    <a href="#relojes" class="btn">Ver Relojes</a>
-  </div>
+  <button onclick="document.getElementById('anillos').scrollIntoView()">Ver colección</button>
 </section>
 
 <!-- ANILLOS -->
 <section id="anillos">
-  <h2>Anillos para pareja</h2>
-  <p class="subtitle">
-    Fabricados en acero inoxidable de alta calidad.  
-    Anillo femenino ajustable · Anillo masculino por talla.
-  </p>
+<h2>Anillos de Promesa</h2>
 
-  <div class="grid">
-    <div class="card">
-      <img src="anillo1.jpg">
-      <h3>Rapunzel</h3>
-      <p>Anillo inspirado en el amor eterno.</p>
-      <div class="price">$129.000 COP</div>
-      <a class="buy" href="https://wa.me/TU_NUMERO_WHATSAPP">Comprar</a>
-    </div>
+<div class="grid">
 
-    <div class="card">
-      <img src="anillo2.jpg">
-      <h3>Corona Real</h3>
-      <p>Diseño elegante y romántico.</p>
-      <div class="price">$139.000 COP</div>
-      <a class="buy" href="https://wa.me/TU_NUMERO_WHATSAPP">Comprar</a>
-    </div>
-  </div>
+<div class="card">
+<img src="anillo-rapunzel.webp">
+<h3>Rapunzel Clásico</h3>
+<p class="price">$129.000</p>
+<p class="status">❌ Agotado</p>
+<button disabled>Agotado</button>
+</div>
+
+<div class="card">
+<img src="anillo-aladdin.webp">
+<h3>Aladdín Real</h3>
+<p class="price">$129.000</p>
+<p class="status">✔ Disponible</p>
+<button onclick="buy('Anillo Aladdín')">Comprar</button>
+</div>
+
+<div class="card">
+<img src="anillo-sapo.webp">
+<h3>Princesa y el Sapo</h3>
+<p class="price">$129.000</p>
+<p class="status">❌ Agotado</p>
+<button disabled>Agotado</button>
+</div>
+
+</div>
 </section>
 
 <!-- RELOJES -->
 <section id="relojes">
-  <h2>Relojes Premium</h2>
-  <p class="subtitle">
-    Relojes de excelente calidad, elegantes y modernos.  
-    El complemento perfecto para cualquier ocasión.
-  </p>
+<h2>Relojes</h2>
 
-  <div class="grid">
-    <div class="card">
-      <img src="reloj1.jpg">
-      <h3>Classic Black</h3>
-      <div class="price">$189.000 COP</div>
-      <a class="buy" href="https://wa.me/TU_NUMERO_WHATSAPP">Comprar</a>
-    </div>
-  </div>
+<div class="grid">
+
+<div class="card">
+<img src="reloj-1.webp">
+<h3>Reloj Classic Gold</h3>
+<p class="price">Próximamente</p>
+<p class="status">⌛ En camino</p>
+<button disabled>Próximamente</button>
+</div>
+
+<div class="card">
+<img src="reloj-2.webp">
+<h3>Reloj Noir Elegant</h3>
+<p class="price">Próximamente</p>
+<p class="status">⌛ En camino</p>
+<button disabled>Próximamente</button>
+</div>
+
+</div>
 </section>
-
-<!-- TRUST -->
-<section>
-  <h2>Confianza Velámour</h2>
-  <div class="trust">
-    <div>✔ Materiales premium</div>
-    <div>✔ Envíos a todo el país</div>
-    <div>✔ Atención personalizada</div>
-    <div>✔ Calidad verificada</div>
-  </div>
-</section>
-
-<!-- WHATSAPP -->
-<a class="whatsapp" href="https://wa.me/57320862355">WhatsApp</a>
 
 <footer>
-  © Velámour — Lujo que se regala
+© 2025 Velámour · Elegancia que se promete
 </footer>
+
+<script>
+function buy(product){
+  const msg=`Hola, estoy interesado en el ${product}.`;
+  window.open(`https://wa.me/573508599595?text=${encodeURIComponent(msg)}`);
+}
+</script>
 
 </body>
 </html>
+
+
 	
