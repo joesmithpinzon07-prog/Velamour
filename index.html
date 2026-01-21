@@ -4,184 +4,161 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Velámour | Joyería & Accesorios Premium</title>
+<title>Velámour | Joyería Premium</title>
 
-<!-- TIPOGRAFÍA PREMIUM -->
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
 
 <style>
-:root{
-  --negro:#0f0f0f;
-  --dorado:#c9a24d;
-  --blanco:#ffffff;
-}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Poppins',sans-serif;background:#000;color:#fff}
+a{text-decoration:none;color:inherit}
 
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-}
-
-body{
-  font-family:'Poppins',sans-serif;
-  background:var(--negro);
-  color:var(--blanco);
-}
-
-/* ---------- HEADER ---------- */
 header{
+  padding:25px 8%;
   display:flex;
   justify-content:space-between;
   align-items:center;
-  padding:20px 40px;
 }
 
-header img{
-  height:50px;
+.logo{
+  font-family:'Playfair Display',serif;
+  font-size:26px;
+  letter-spacing:2px;
 }
 
 nav a{
-  margin-left:20px;
-  color:var(--blanco);
-  text-decoration:none;
-  font-weight:300;
+  margin-left:25px;
+  font-size:14px;
+  opacity:.8;
 }
+nav a:hover{opacity:1}
 
-nav a:hover{
-  color:var(--dorado);
-}
-
-/* ---------- HERO ---------- */
 .hero{
-  height:85vh;
+  min-height:80vh;
   display:flex;
-  flex-direction:column;
-  justify-content:center;
   align-items:center;
-  text-align:center;
-  padding:20px;
+  padding:0 8%;
 }
 
 .hero h1{
-  font-family:'Cormorant Garamond',serif;
-  font-size:3rem;
-  letter-spacing:2px;
-  margin-bottom:15px;
+  font-family:'Playfair Display',serif;
+  font-size:52px;
+  margin-bottom:20px;
 }
 
 .hero p{
-  max-width:650px;
-  opacity:.9;
+  opacity:.85;
+  line-height:1.7;
+  margin-bottom:30px;
 }
 
-.hero button{
-  margin-top:30px;
-  padding:14px 40px;
-  background:transparent;
-  border:1px solid var(--dorado);
-  color:var(--dorado);
-  cursor:pointer;
-  font-size:1rem;
-  transition:.4s;
+.btn{
+  display:inline-block;
+  padding:14px 32px;
+  border:1px solid #c9a24d;
+  color:#c9a24d;
+  font-size:14px;
+  letter-spacing:1px;
+  transition:.3s;
+}
+.btn:hover{background:#c9a24d;color:#000}
+
+section{padding:90px 8%}
+
+.section-title{
+  font-family:'Playfair Display',serif;
+  font-size:36px;
+  margin-bottom:15px;
 }
 
-.hero button:hover{
-  background:var(--dorado);
-  color:#000;
+.section-sub{
+  opacity:.75;
+  margin-bottom:50px;
 }
 
-/* ---------- SECCIONES ---------- */
-section{
-  padding:80px 40px;
-}
-
-section h2{
-  font-family:'Cormorant Garamond',serif;
-  font-size:2.5rem;
-  text-align:center;
-  margin-bottom:60px;
-  color:var(--dorado);
-}
-
-/* ---------- GRID ---------- */
 .grid{
   display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-  gap:40px;
-  max-width:1200px;
-  margin:auto;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:30px;
 }
 
 .card{
-  background:#151515;
+  background:#0b0b0b;
   padding:20px;
-  text-align:center;
-  border-radius:8px;
-  transition:.5s;
+  border:1px solid #1a1a1a;
+  transition:.4s;
+  cursor:pointer;
 }
-
-.card:hover{
-  transform:translateY(-10px);
-}
+.card:hover{transform:translateY(-8px);border-color:#c9a24d}
 
 .card img{
   width:100%;
-  border-radius:6px;
-  transition:.6s;
-}
-
-.card:hover img{
-  transform:scale(1.05);
+  height:260px;
+  object-fit:cover;
+  margin-bottom:15px;
 }
 
 .card h3{
-  font-family:'Cormorant Garamond',serif;
-  margin:15px 0 10px;
+  font-family:'Playfair Display',serif;
+  margin-bottom:8px;
 }
 
-.price{
-  color:var(--dorado);
-  margin-bottom:10px;
+.card p{
+  font-size:13px;
+  opacity:.75;
+  margin-bottom:15px;
 }
 
-.status{
-  font-size:.85rem;
-  margin-bottom:10px;
-  opacity:.8;
-}
-
-.card button{
-  padding:10px 25px;
-  border:none;
-  background:var(--dorado);
-  color:#000;
-  cursor:pointer;
+.card span{
+  color:#c9a24d;
   font-weight:500;
 }
 
-.card button:disabled{
-  background:#555;
-  color:#999;
-  cursor:not-allowed;
+.product-view{
+  display:none;
+  max-width:900px;
+  margin:auto;
+  animation:fade .6s ease;
+}
+.product-view.active{display:block}
+
+.product-view img{
+  width:100%;
+  max-height:420px;
+  object-fit:cover;
+  margin-bottom:25px;
 }
 
-/* ---------- FOOTER ---------- */
-footer{
-  padding:40px;
-  text-align:center;
-  font-size:.9rem;
+.product-view h2{
+  font-family:'Playfair Display',serif;
+  font-size:34px;
+  margin-bottom:15px;
+}
+
+.product-view p{
+  opacity:.8;
+  line-height:1.7;
+  margin-bottom:25px;
+}
+
+.back{
+  display:inline-block;
+  margin-bottom:25px;
+  font-size:14px;
   opacity:.7;
+  cursor:pointer;
 }
 
-/* ---------- RESPONSIVE ---------- */
-@media(max-width:768px){
-  header{
-    flex-direction:column;
-    gap:15px;
-  }
-  .hero h1{
-    font-size:2.2rem;
-  }
+footer{
+  padding:40px 8%;
+  text-align:center;
+  font-size:13px;
+  opacity:.6;
+}
+
+@keyframes fade{
+  from{opacity:0;transform:translateY(20px)}
+  to{opacity:1;transform:none}
 }
 </style>
 </head>
@@ -189,96 +166,128 @@ footer{
 <body>
 
 <header>
-  <img src="logo.png" alt="Velamour">
+  <div class="logo">VELÁMOUR</div>
   <nav>
     <a href="#inicio">Inicio</a>
     <a href="#anillos">Anillos</a>
-    <a href="#relojes">Relojes</a>
   </nav>
 </header>
 
-<!-- INICIO -->
 <section class="hero" id="inicio">
-  <h1>Velámour</h1>
-  <p>
-    Joyería y accesorios diseñados para parejas.  
-    Anillos en acero inoxidable, elegantes, resistentes y pensados para durar.
-    El anillo femenino es ajustable, el masculino viene en talla.
-  </p>
-  <button onclick="document.getElementById('anillos').scrollIntoView()">Ver colección</button>
+  <div>
+    <h1>Joyería que cuenta historias</h1>
+    <p>
+      Velámour es una tienda especializada en joyería para parejas.
+      Anillos en acero inoxidable premium, diseño femenino ajustable
+      y masculino por talla. Regalos con intención, elegancia y amor real.
+    </p>
+    <a href="#anillos" class="btn">Ver Anillos</a>
+  </div>
 </section>
 
-<!-- ANILLOS -->
 <section id="anillos">
-<h2>Anillos de Promesa</h2>
+  <h2 class="section-title">Colección de Anillos</h2>
+  <p class="section-sub">Precio único · $43.000 COP</p>
 
-<div class="grid">
+  <div class="grid" id="listado">
+    <div class="card" onclick="verProducto('flor')">
+      <img src="img/anillos3.png">
+      <h3>Flor Giratoria</h3>
+      <p>Romántico con movimiento.</p>
+      <span>$43.000 COP</span>
+    </div>
 
-<div class="card">
-<img src="anillo-rapunzel.webp">
-<h3>Rapunzel Clásico</h3>
-<p class="price">$129.000</p>
-<p class="status">❌ Agotado</p>
-<button disabled>Agotado</button>
-</div>
+    <div class="card" onclick="verProducto('gato')">
+      <img src="img/anillos1.png">
+      <h3>Gato con Botas</h3>
+      <p>Divertido y elegante.</p>
+      <span>$43.000 COP</span>
+    </div>
 
-<div class="card">
-<img src="anillo-aladdin.webp">
-<h3>Aladdín Real</h3>
-<p class="price">$129.000</p>
-<p class="status">✔ Disponible</p>
-<button onclick="buy('Anillo Aladdín')">Comprar</button>
-</div>
+    <div class="card" onclick="verProducto('hotel')">
+      <img src="img/anillos2.png">
+      <h3>Hotel Transilvania</h3>
+      <p>Oscuro y encantador.</p>
+      <span>$43.000 COP</span>
+    </div>
 
-<div class="card">
-<img src="anillo-sapo.webp">
-<h3>Princesa y el Sapo</h3>
-<p class="price">$129.000</p>
-<p class="status">❌ Agotado</p>
-<button disabled>Agotado</button>
-</div>
+    <div class="card" onclick="verProducto('shrek')">
+      <img src="img/anillos4.png">
+      <h3>Shrek Clásico</h3>
+      <p>Amor real, sin filtros.</p>
+      <span>$43.000 COP</span>
+    </div>
 
-</div>
-</section>
+    <div class="card" onclick="verProducto('princesa')">
+      <img src="img/anillos5.png">
+      <h3>La Princesa y el Sapo</h3>
+      <p>Elegancia de cuento.</p>
+      <span>$43.000 COP</span>
+    </div>
+  </div>
 
-<!-- RELOJES -->
-<section id="relojes">
-<h2>Relojes</h2>
+  <!-- VISTAS INDIVIDUALES -->
+  <div class="product-view" id="flor">
+    <span class="back" onclick="volver()">← Volver</span>
+    <img src="img/flor.jpg">
+    <h2>Anillo Flor Giratoria</h2>
+    <p>Anillo en acero inoxidable premium. Mujer ajustable, hombre por talla. Precio: $43.000 COP.</p>
+    <a class="btn" href="https://wa.me/573208652355?text=Me%20interesa%20comprar%20el%20Anillo%20Flor%20Giratoria" target="_blank">Comprar por WhatsApp</a>
+  </div>
 
-<div class="grid">
+  <div class="product-view" id="gato">
+    <span class="back" onclick="volver()">← Volver</span>
+    <img src="img/gato.jpg">
+    <h2>Anillo Gato con Botas</h2>
+    <p>Anillo en acero inoxidable premium. Mujer ajustable, hombre por talla. Precio: $43.000 COP.</p>
+    <a class="btn" href="https://wa.me/573208652355?text=Me%20interesa%20comprar%20el%20Anillo%20Gato%20con%20Botas" target="_blank">Comprar por WhatsApp</a>
+  </div>
 
-<div class="card">
-<img src="reloj-1.webp">
-<h3>Reloj Classic Gold</h3>
-<p class="price">Próximamente</p>
-<p class="status">⌛ En camino</p>
-<button disabled>Próximamente</button>
-</div>
+  <div class="product-view" id="hotel">
+    <span class="back" onclick="volver()">← Volver</span>
+    <img src="img/hotel.jpg">
+    <h2>Anillo Hotel Transilvania</h2>
+    <p>Anillo en acero inoxidable premium. Mujer ajustable, hombre por talla. Precio: $43.000 COP.</p>
+    <a class="btn" href="https://wa.me/573208652355?text=Me%20interesa%20comprar%20el%20Anillo%20Hotel%20Transilvania" target="_blank">Comprar por WhatsApp</a>
+  </div>
 
-<div class="card">
-<img src="reloj-2.webp">
-<h3>Reloj Noir Elegant</h3>
-<p class="price">Próximamente</p>
-<p class="status">⌛ En camino</p>
-<button disabled>Próximamente</button>
-</div>
+  <div class="product-view" id="shrek">
+    <span class="back" onclick="volver()">← Volver</span>
+    <img src="img/shrek.jpg">
+    <h2>Anillo Shrek Clásico</h2>
+    <p>Anillo en acero inoxidable premium. Mujer ajustable, hombre por talla. Precio: $43.000 COP.</p>
+    <a class="btn" href="https://wa.me/573208652355?text=Me%20interesa%20comprar%20el%20Anillo%20Shrek%20Clasico" target="_blank">Comprar por WhatsApp</a>
+  </div>
 
-</div>
+  <div class="product-view" id="princesa">
+    <span class="back" onclick="volver()">← Volver</span>
+    <img src="img/princesa.jpg">
+    <h2>Anillo La Princesa y el Sapo</h2>
+    <p>Anillo en acero inoxidable premium. Mujer ajustable, hombre por talla. Precio: $43.000 COP.</p>
+    <a class="btn" href="https://wa.me/573208652355?text=Me%20interesa%20comprar%20el%20Anillo%20La%20Princesa%20y%20el%20Sapo" target="_blank">Comprar por WhatsApp</a>
+  </div>
 </section>
 
 <footer>
-© 2025 Velámour · Elegancia que se promete
+© Velámour · Joyería Premium para Parejas
 </footer>
 
 <script>
-function buy(product){
-  const msg=`Hola, estoy interesado en el ${product}.`;
-  window.open(`https://wa.me/573508599595?text=${encodeURIComponent(msg)}`);
+function verProducto(id){
+  document.getElementById('listado').style.display='none';
+  document.querySelectorAll('.product-view').forEach(p=>p.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+}
+function volver(){
+  document.getElementById('listado').style.display='grid';
+  document.querySelectorAll('.product-view').forEach(p=>p.classList.remove('active'));
 }
 </script>
 
 </body>
 </html>
 
+	
 
 	
+
