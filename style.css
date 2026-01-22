@@ -124,3 +124,61 @@ nav a {
   opacity: .4;
   pointer-events: none;
 }
+.anillos-lista {
+  padding: 80px 6%;
+}
+
+.anillos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.anillo-card {
+  background: #0e0e0e;
+  border: 1px solid rgba(201,162,77,.25);
+  border-radius: 18px;
+  padding: 24px;
+  text-align: center;
+  transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.anillo-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(0,0,0,.6);
+}
+
+.anillo-card img {
+  width: 100%;
+  border-radius: 14px;
+  margin-bottom: 16px;
+}
+
+.anillo-card h3 {
+  color: #c9a24d;
+  margin-bottom: 8px;
+}
+
+.anillo-card p {
+  font-size: 14px;
+  opacity: .85;
+}
+
+.precio {
+  display: block;
+  margin: 12px 0;
+  font-weight: bold;
+}
+
+.btn-comprar {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 22px;
+  border-radius: 30px;
+  background: linear-gradient(135deg, #c9a24d, #f1d58a);
+  color: #000;
+  text-decoration: none;
+  font-weight: 600;
+}
+
