@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Producto | Velámour</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<section class="section" id="detalle"></section>
+
+<script>
+const p = JSON.parse(localStorage.getItem("producto"));
+document.getElementById("detalle").innerHTML = `
+  <div class="card">
+    <img src="${p.imagen}">
+    <h3>${p.nombre}</h3>
+    <p class="price">$${p.precio} COP</p>
+    <p class="note">Envío adicional</p>
+    <a class="btn" href="https://wa.me/573208652355?text=Hola,%20me%20interesa%20comprar%20${p.nombre}">
+      Comprar por WhatsApp
+    </a>
+  </div>
+`;
+</script>
+
+</body>
+</html>
+
