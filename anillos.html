@@ -1,42 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anillos | Velámour</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+body{margin:0;background:#0f0f0f;color:#fff;font-family:Poppins}
+a{text-decoration:none;color:inherit}
+
+header{
+  padding:20px 40px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  border-bottom:1px solid rgba(201,162,77,.3)
+}
+header h1{font-family:Cinzel;color:#c9a24d;letter-spacing:3px}
+nav a{margin-left:25px;color:#bbb}
+nav a:hover{color:#c9a24d}
+
+.section{
+  padding:80px 40px;
+  text-align:center
+}
+.section h2{
+  font-family:Cinzel;
+  color:#c9a24d;
+  letter-spacing:2px;
+  margin-bottom:10px
+}
+.section p{color:#ccc;margin-bottom:50px}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+  gap:30px
+}
+
+.card{
+  background:#151515;
+  padding:25px;
+  border-radius:18px;
+  border:1px solid rgba(201,162,77,.15);
+  transition:.4s
+}
+.card:hover{transform:translateY(-6px);border-color:#c9a24d}
+
+.card img{
+  width:100%;
+  border-radius:14px;
+  margin-bottom:15px
+}
+.card h3{font-family:Cinzel;color:#c9a24d;font-size:18px}
+.card span{display:block;margin:10px 0;color:#fff}
+.card small{color:#aaa;font-size:13px}
+
+.btn{
+  display:inline-block;
+  margin-top:15px;
+  padding:12px 26px;
+  border-radius:30px;
+  background:#c9a24d;
+  color:#000;
+  font-size:13px;
+  letter-spacing:1px
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>VELÁMOUR</h1>
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="relojes.html">Relojes</a>
+  </nav>
+</header>
+
 <section class="section">
-<h2 class="section-title">Anillos</h2>
-<p class="section-sub">Acero inoxidable · Ajustable mujer · Talla hombre</p>
+  <h2>Anillos Disponibles</h2>
+  <p>Acero inoxidable premium · Dama ajustable · Caballero por talla<br>Precio único $43.000 COP · Envío adicional</p>
 
-<div class="grid">
+  <div class="grid">
 
-<div class="card" onclick="verProducto('Flor Giratoria',43000,'anillo1.png')">
-<img src="anillo1.png">
-<h3>Flor Giratoria</h3>
-<p class="price">$43.000 COP</p>
-<p class="note">Envío adicional</p>
-</div>
+    <!-- FLOR GIRATORIA -->
+    <div class="card">
+      <img src="anillos1.png">
+      <h3>Flor Giratoria</h3>
+      <small>Romántico con movimiento</small>
+      <span>$43.000 COP</span>
+      <a class="btn" href="https://wa.me/573208652355?text=Hola,%20me%20interesa%20comprar%20el%20anillo%20Flor%20Giratoria">Comprar</a>
+    </div>
 
-<div class="card" onclick="verProducto('Gato con Botas',43000,'anillo2.png')">
-<img src="anillo2.png">
-<h3>Gato con Botas</h3>
-<p class="price">$43.000 COP</p>
-</div>
+    <!-- GATO CON BOTAS -->
+    <div class="card">
+      <img src="anillos2.png">
+      <h3>Gato con Botas</h3>
+      <small>Divertido y elegante</small>
+      <span>$43.000 COP</span>
+      <a class="btn" href="https://wa.me/573208652355?text=Hola,%20me%20interesa%20comprar%20el%20anillo%20Gato%20con%20Botas">Comprar</a>
+    </div>
 
-<div class="card" onclick="verProducto('Hotel Transilvania',43000,'anillo3.png')">
-<img src="anillo3.png">
-<h3>Hotel Transilvania</h3>
-<p class="price">$43.000 COP</p>
-</div>
+    <!-- HOTEL TRANSILVANIA -->
+    <div class="card">
+      <img src="anillos3.png">
+      <h3>Hotel Transilvania</h3>
+      <small>Diseño único y oscuro</small>
+      <span>$43.000 COP</span>
+      <a class="btn" href="https://wa.me/573208652355?text=Hola,%20me%20interesa%20comprar%20el%20anillo%20Hotel%20Transilvania">Comprar</a>
+    </div>
 
-<div class="card" onclick="verProducto('Shrek Clásico',43000,'anillo4.png')">
-<img src="anillo4.png">
-<h3>Shrek Clásico</h3>
-<p class="price">$43.000 COP</p>
-</div>
+    <!-- SHREK CLÁSICO -->
+    <div class="card">
+      <img src="anillos4.png">
+      <h3>Shrek Clásico</h3>
+      <small>Original y nostálgico</small>
+      <span>$43.000 COP</span>
+      <a class="btn" href="https://wa.me/573208652355?text=Hola,%20me%20interesa%20comprar%20el%20anillo%20Shrek%20Clásico">Comprar</a>
+    </div>
 
-<div class="card" onclick="verProducto('Princesa y el Sapo',43000,'anillo5.png')">
-<img src="anillo5.png">
-<h3>Princesa y el Sapo</h3>
-<p class="price">$43.000 COP</p>
-</div>
+    <!-- PRINCESA Y EL SAPO -->
+    <div class="card">
+      <img src="anillos5.png">
+      <h3>Princesa y el Sapo</h3>
+      <small>Clásico romántico</small>
+      <span>$43.000 COP</span>
+      <a class="btn" href="https://wa.me/573208652355?text=Hola,%20me%20interesa%20comprar%20el%20anillo%20Princesa%20y%20el%20Sapo">Comprar</a>
+    </div>
 
-</div>
+  </div>
 </section>
 
-<script src="script.js"></script>
+</body>
+</html>
+
 
