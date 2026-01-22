@@ -17,3 +17,10 @@ document.addEventListener('DOMContentLoaded', function(){
     });
   });
 });
+
+function verProducto(nombre, precio, imagen) {
+  localStorage.setItem("producto", JSON.stringify({
+    nombre, precio, imagen
+  }));
+  window.location.href = "producto.html";
+}
