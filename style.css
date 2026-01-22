@@ -1,103 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400;500&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Cormorant Garamond', serif;
 }
 
 body {
-  background: #0b0b0b;
-  color: #f2f2f2;
+  background: #000;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
 }
 
-.header {
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 25px 60px;
-}
-
-.logo {
-  height: 55px;
+  padding: 25px 80px;
+  border-bottom: 1px solid #222;
 }
 
 nav a {
-  margin-left: 25px;
-  text-decoration: none;
-  color: #d4af37;
+  margin-left: 30px;
+  font-weight: 300;
   letter-spacing: 1px;
 }
 
 .hero {
+  padding: 120px 80px;
   text-align: center;
-  padding: 120px 20px;
 }
 
-.gold-line {
-  width: 70px;
-  height: 2px;
-  background: #d4af37;
-  margin: 20px auto;
+.hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3.5rem;
+  margin-bottom: 20px;
 }
 
-.hero-text {
+.hero p {
+  opacity: .8;
   max-width: 700px;
-  margin: 20px auto;
-  line-height: 1.8;
-  color: #ddd;
-}
-
-.hero-buttons {
-  margin-top: 40px;
-}
-
-.btn-gold {
-  background: #d4af37;
-  color: #0b0b0b;
-  padding: 14px 30px;
-  text-decoration: none;
-  margin: 5px;
-}
-
-.btn-outline {
-  border: 1px solid #d4af37;
-  color: #d4af37;
-  padding: 14px 30px;
-  text-decoration: none;
+  margin: auto;
 }
 
 .section {
-  padding: 80px 40px;
+  padding: 100px 80px;
+}
+
+.section-title {
   text-align: center;
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
 }
 
-.product {
-  max-width: 400px;
-  margin: 40px auto;
+.section-sub {
+  text-align: center;
+  opacity: .7;
+  margin-bottom: 60px;
 }
 
-.product img {
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(260px,1fr));
+  gap: 40px;
+}
+
+.card {
+  background: #0b0b0b;
+  padding: 30px;
+  text-align: center;
+  border: 1px solid #1f1f1f;
+  transition: all .4s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  border-color: gold;
+}
+
+.card img {
   width: 100%;
-  border-radius: 6px;
+  height: 220px;
+  object-fit: contain;
+  margin-bottom: 20px;
+}
+
+.card h3 {
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 10px;
 }
 
 .price {
-  display: block;
   margin: 10px 0;
-  font-weight: bold;
+  font-weight: 500;
 }
 
-.status {
-  display: block;
-  margin-top: 10px;
-  font-weight: bold;
+.note {
+  font-size: 0.85rem;
+  opacity: .6;
 }
 
-.agotado { color: red; }
-.upcoming { color: #aaa; }
+.btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 12px 24px;
+  border: 1px solid gold;
+  color: gold;
+  transition: .3s;
+}
 
-footer {
-  text-align: center;
-  padding: 20px;
-  color: #888;
+.btn:hover {
+  background: gold;
+  color: #000;
+}
+
+.disabled {
+  opacity: .4;
+  pointer-events: none;
 }
