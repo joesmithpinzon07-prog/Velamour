@@ -1,71 +1,42 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-<meta charset="UTF-8">
-<title>Anillos | Velámour</title>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter&display=swap" rel="stylesheet">
-<style>
-body{margin:0;background:#000;color:#fff;font-family:'Inter';}
-header{padding:25px 60px;display:flex;justify-content:space-between;}
-nav a{color:#d4af37;margin-left:25px;text-decoration:none;}
-section{padding:80px 60px;}
-h1{font-family:'Playfair Display';color:#d4af37;}
-.grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-  gap:40px;
-  margin-top:40px;
-}
-.card{
-  border:1px solid #222;
-  padding:20px;
-  transition:.3s;
-}
-.card:hover{transform:translateY(-6px);}
-button{
-  background:none;
-  border:1px solid #d4af37;
-  color:#d4af37;
-  padding:10px 20px;
-  margin-top:15px;
-}
-</style>
-</head>
+<section class="section">
+<h2 class="section-title">Anillos</h2>
+<p class="section-sub">Acero inoxidable · Ajustable mujer · Talla hombre</p>
 
-<body>
+<div class="grid">
 
-<header>
-  <div style="color:#d4af37;font-family:'Playfair Display';">Velámour</div>
-  <nav>
-    <a href="index.html">Inicio</a>
-    <a href="relojes.html">Relojes</a>
-  </nav>
-</header>
+<div class="card" onclick="verProducto('Flor Giratoria',43000,'anillo1.png')">
+<img src="anillo1.png">
+<h3>Flor Giratoria</h3>
+<p class="price">$43.000 COP</p>
+<p class="note">Envío adicional</p>
+</div>
 
-<section>
-  <h1>Anillos para pareja</h1>
-  <p>
-    Fabricados en acero de alta calidad.  
-    Anillo femenino ajustable.  
-    Anillo masculino por talla.
-  </p>
+<div class="card" onclick="verProducto('Gato con Botas',43000,'anillo2.png')">
+<img src="anillo2.png">
+<h3>Gato con Botas</h3>
+<p class="price">$43.000 COP</p>
+</div>
 
-  <div class="grid">
-    <div class="card">
-      <h3>Anillos Rapunzel</h3>
-      <p>Símbolo de amor eterno.</p>
-      <button>Comprar</button>
-    </div>
+<div class="card" onclick="verProducto('Hotel Transilvania',43000,'anillo3.png')">
+<img src="anillo3.png">
+<h3>Hotel Transilvania</h3>
+<p class="price">$43.000 COP</p>
+</div>
 
-    <div class="card">
-      <h3>Anillos Corona</h3>
-      <p>Diseño elegante y romántico.</p>
-      <button>Comprar</button>
-    </div>
+<div class="card" onclick="verProducto('Shrek Clásico',43000,'anillo4.png')">
+<img src="anillo4.png">
+<h3>Shrek Clásico</h3>
+<p class="price">$43.000 COP</p>
+</div>
 
-    <!-- aquí agregas los otros -->
-  </div>
+<div class="card" onclick="verProducto('Princesa y el Sapo',43000,'anillo5.png')">
+<img src="anillo5.png">
+<h3>Princesa y el Sapo</h3>
+<p class="price">$43.000 COP</p>
+</div>
+
+</div>
 </section>
 
-</body>
-</html>
+<script src="script.js"></script>
+
