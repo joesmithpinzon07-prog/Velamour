@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Comprar | Velámour</title>
+<script>
+const params = new URLSearchParams(window.location.search);
+const producto = params.get("producto");
+const mensaje = `Hola Velámour, me interesa comprar el producto: ${producto}. ¿Me brindas más información?`;
+window.location.href = "https://wa.me/573208652355?text=" + encodeURIComponent(mensaje);
+</script>
+</head>
+<body></body>
+</html>
