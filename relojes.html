@@ -2,184 +2,86 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Relojes | Velámour</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 
 <style>
-body{margin:0;background:#0f0f0f;color:#fff;font-family:Poppins}
-a{text-decoration:none;color:inherit}
-
-header{
-  padding:20px 40px;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  border-bottom:1px solid rgba(201,162,77,.3)
-}
-header h1{font-family:Cinzel;color:#c9a24d}
-nav a{margin-left:25px;color:#bbb}
+/* MISMO ESTILO QUE ANILLOS */
+body{margin:0;background:#0b0b0b;color:#fff;font-family:'Inter',sans-serif}
+header{padding:24px 60px;display:flex;justify-content:space-between;border-bottom:1px solid rgba(201,162,77,.25)}
+header img{height:38px}
+nav a{color:#fff;text-decoration:none;margin-left:28px;font-size:14px}
 nav a:hover{color:#c9a24d}
-
-.section{padding:80px 40px;text-align:center}
-.section h2{font-family:Cinzel;color:#c9a24d;letter-spacing:2px}
-.section p{color:#ccc;margin:15px 0 50px}
-
-.grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
-  gap:30px
-}
-
-.card{
-  background:#151515;
-  padding:25px;
-  border-radius:18px;
-  border:1px solid rgba(201,162,77,.15)
-}
-.card h3{font-family:Cinzel;color:#c9a24d}
-.card span{display:block;margin:10px 0}
-.estado{color:#999;font-size:13px}
-
-.btn{
-  display:inline-block;
-  padding:12px 26px;
-  border-radius:30px;
-  background:#c9a24d;
-  color:#000;
-  font-size:13px
-}
+h1{font-family:'Cinzel',serif;color:#c9a24d;text-align:center;margin:80px 20px 20px}
+.sub{text-align:center;color:#b5b5b5;margin-bottom:80px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:32px;padding:0 60px 120px}
+.card{border:1px solid rgba(201,162,77,.25);border-radius:18px;padding:20px;text-align:center;transition:.4s}
+.card:hover{transform:translateY(-8px)}
+.card img{width:100%;max-height:180px;object-fit:contain}
+.card h3{font-family:'Cinzel',serif;color:#c9a24d;font-size:18px}
+.precio{margin:12px 0;font-weight:600}
+.btn{padding:10px 18px;border-radius:20px;background:#c9a24d;color:#000;text-decoration:none;font-size:13px}
+.prox{opacity:.4}
 </style>
 </head>
 
 <body>
 
 <header>
-  <h1>VELÁMOUR</h1>
+  <img src="logotipo.png">
   <nav>
     <a href="index.html">Inicio</a>
     <a href="anillos.html">Anillos</a>
+    <a href="relojes.html">Relojes</a>
   </nav>
 </header>
 
-<section class="section">
-  <h2>Relojes</h2>
-  <p>Alta calidad · Diseño impactante<br>Precio $80.000 COP · Envío adicional</p>
+<h1>RELOJES</h1>
+<p class="sub">Relojes de alta calidad · Presencia que impone</p>
 
-  <div class="grid">
+<div class="grid">
 
-    <div class="card">
-      <h3>Richard Mille Calavera Transparente</h3>
-      <span>$80.000 COP</span>
-      <a class="btn" href="https://wa.me/573208652355?text=Hola,%20me%20interesa%20el%20reloj%20Richard%20Mille%20Calavera%20Transparente">Comprar</a>
-    </div>
+<div class="card">
+<img src="richardmilletrans.png">
+<h3>Richard Mille Calavera</h3>
+<div class="precio">$80.000 COP</div>
+<a class="btn" href="whatsapp.html?producto=Richard%20Mille%20Calavera">Comprar</a>
+</div>
 
-    <div class="card">
-      <h3>Richard Mille Azul</h3>
-      <span>$80.000 COP</span>
-      <a class="btn" href="https://wa.me/573208652355?text=Hola,%20me%20interesa%20el%20reloj%20Richard%20Mille%20Azul">Comprar</a>
-    </div>
+<div class="card">
+<img src="richardmilleblue.png">
+<h3>Richard Mille Azul</h3>
+<div class="precio">$80.000 COP</div>
+<a class="btn" href="whatsapp.html?producto=Richard%20Mille%20Azul">Comprar</a>
+</div>
 
-    <div class="card">
-      <h3>Richard Mille Dragón</h3>
-      <span>$80.000 COP</span>
-      <a class="btn" href="https://wa.me/573208652355?text=Hola,%20me%20interesa%20el%20reloj%20Richard%20Mille%20Dragón">Comprar</a>
-    </div>
+<div class="card">
+<img src="richardmilledragon.png">
+<h3>Richard Mille Dragón</h3>
+<div class="precio">$80.000 COP</div>
+<a class="btn" href="whatsapp.html?producto=Richard%20Mille%20Dragon">Comprar</a>
+</div>
 
-    <div class="card">
-      <h3>Rin BMW</h3>
-      <span class="estado">Próximamente</span>
-    </div>
+<div class="card prox">
+<img src="relojrin.png">
+<h3>Rin BMW</h3>
+<p>Próximamente</p>
+</div>
 
-    <div class="card">
-      <h3>Casio Edifice</h3>
-      <span>$80.000 COP</span>
-      <a class="btn" href="https://wa.me/573208652355?text=Hola,%20me%20interesa%20el%20reloj%20Casio%20Edifice">Comprar</a>
-    </div>
+<div class="card">
+<img src="casioedifice.png">
+<h3>Casio Edifice</h3>
+<div class="precio">$80.000 COP</div>
+<a class="btn" href="whatsapp.html?producto=Casio%20Edifice">Comprar</a>
+</div>
 
-  </div>
-</section>
+</div>
 
 </body>
 </html>
 
-<section id="relojes" style="padding:60px 20px;text-align:center">
-  <h2>Relojes</h2>
-  <p>Alta calidad · Diseño premium<br>
-     Precio <strong>$80.000 COP</strong> · Envío adicional</p>
-
-  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:25px;margin-top:40px">
-
-    <div>
-      <h3>Richard Mille Calavera Transparente</h3>
-      <p>$80.000 COP</p>
-      <a href="https://wa.me/573208652355?text=Hola,%20me%20interesa%20el%20reloj%20Richard%20Mille%20Calavera%20Transparente">
-        Comprar
-      </a>
-    </div>
-
-    <div>
-      <h3>Richard Mille Azul</h3>
-      <p>$80.000 COP</p>
-      <a href="https://wa.me/573208652355?text=Hola,%20me%20interesa%20el%20reloj%20Richard%20Mille%20Azul">
-        Comprar
-      </a>
-    </div>
-
-    <div>
-      <h3>Richard Mille Dragón</h3>
-      <p>$80.000 COP</p>
-      <a href="https://wa.me/573208652355?text=Hola,%20me%20interesa%20el%20reloj%20Richard%20Mille%20Dragón">
-        Comprar
-      </a>
-    </div>
-
-    <div>
-      <h3>Casio Edifice</h3>
-      <p>$80.000 COP</p>
-      <a href="https://wa.me/573208652355?text=Hola,%20me%20interesa%20el%20reloj%20Casio%20Edifice">
-        Comprar
-      </a>
-    </div>
-
-    <div>
-      <h3>Rin BMW</h3>
-      <p><em>Próximamente</em></p>
-    </div>
-<section class="catalogo fade-in">
-  <h1 class="titulo-seccion">Relojes</h1>
-  <p class="subtitulo">
-    Alta calidad · Diseño imponente · Envío adicional
-  </p>
-
-  <div class="grid-catalogo">
-
-    <div class="card">
-      <img src="reloj1.png">
-      <h3>Richard Mille Calavera Transparente</h3>
-      <span>$80.000 COP</span>
-      <a href="rm-calavera.html" class="btn-ver">Ver detalle</a>
-    </div>
-
-    <div class="card">
-      <img src="reloj2.png">
-      <h3>Richard Mille Azul</h3>
-      <span>$80.000 COP</span>
-      <a href="rm-azul.html" class="btn-ver">Ver detalle</a>
-    </div>
-
-    <div class="card">
-      <img src="reloj4.png">
-      <h3>Rin BMW</h3>
-      <span class="proximamente">Próximamente</span>
-    </div>
-
-  </div>
-</section>
-
-  </div>
-</section>
 
 
 
