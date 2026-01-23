@@ -1,81 +1,49 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Velámour | Joyas que sellan promesas</title>
+  <meta charset="UTF-8">
+  <title>Velámour | Joyas con significado</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <!-- FUENTE ELEGANTE -->
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 
   <style>
     :root{
-      --negro:#0f0f0f;
+      --negro:#0b0b0b;
       --dorado:#c9a24d;
       --gris:#b5b5b5;
-      --blanco:#ffffff;
     }
 
-    *{
-      margin:0;
-      padding:0;
-      box-sizing:border-box;
-    }
+    *{margin:0;padding:0;box-sizing:border-box}
 
     body{
-      font-family:'Poppins', sans-serif;
       background:var(--negro);
-      color:var(--blanco);
-      line-height:1.6;
-    }
-
-    a{
-      text-decoration:none;
-      color:inherit;
+      color:#fff;
+      font-family:'Inter',sans-serif;
+      overflow-x:hidden;
     }
 
     /* ================= HEADER ================= */
     header{
-      width:100%;
-      padding:20px 60px;
       display:flex;
-      align-items:center;
       justify-content:space-between;
-      position:fixed;
-      top:0;
-      left:0;
-      background:rgba(15,15,15,.85);
-      backdrop-filter: blur(8px);
-      border-bottom:1px solid rgba(201,162,77,.25);
-      z-index:1000;
-    }
-
-    .logo{
-      display:flex;
       align-items:center;
-      gap:12px;
+      padding:24px 60px;
+      border-bottom:1px solid rgba(201,162,77,.25);
+      animation:fadeDown 1s ease;
     }
 
-    .logo img{
-      width:42px;
-    }
-
-    .logo span{
-      font-family:'Cinzel', serif;
-      font-size:22px;
-      letter-spacing:2px;
-      color:var(--dorado);
-    }
-
-    nav{
-      display:flex;
-      gap:32px;
+    header img{
+      height:42px;
     }
 
     nav a{
+      color:#fff;
+      text-decoration:none;
+      margin-left:32px;
       font-size:14px;
       letter-spacing:1px;
-      color:var(--gris);
       transition:.3s;
     }
 
@@ -85,269 +53,144 @@
 
     /* ================= HERO ================= */
     .hero{
-      min-height:100vh;
-      display:flex;
-      align-items:center;
-      justify-content:center;
       text-align:center;
-      padding:120px 20px 60px;
-      background:
-        radial-gradient(circle at top, rgba(201,162,77,.12), transparent 60%);
-      animation:fadeIn 1.2s ease;
-    }
-
-    .hero-content{
-      max-width:820px;
+      padding:100px 20px 80px;
+      animation:fadeUp 1.2s ease;
     }
 
     .hero h1{
-      font-family:'Cinzel', serif;
-      font-size:64px;
-      letter-spacing:6px;
+      font-family:'Cinzel',serif;
+      font-size:56px;
       color:var(--dorado);
+      letter-spacing:4px;
       margin-bottom:20px;
     }
 
     .hero p{
-      font-size:18px;
-      color:#e0e0e0;
-      margin-bottom:40px;
-    }
-
-    .hero-buttons{
-      display:flex;
-      justify-content:center;
-      gap:20px;
-      flex-wrap:wrap;
-    }
-
-    .btn{
-      padding:14px 34px;
-      border-radius:30px;
-      font-size:14px;
-      letter-spacing:1px;
-      transition:.4s;
-      border:1px solid var(--dorado);
-    }
-
-    .btn-primary{
-      background:var(--dorado);
-      color:#000;
-    }
-
-    .btn-primary:hover{
-      background:#e6c067;
-      transform:translateY(-2px);
-    }
-
-    .btn-outline{
-      background:transparent;
-      color:var(--dorado);
-    }
-
-    .btn-outline:hover{
-      background:var(--dorado);
-      color:#000;
-      transform:translateY(-2px);
-    }
-
-    /* ================= SECTIONS ================= */
-    section{
-      padding:100px 60px;
-    }
-
-    .section-title{
-      font-family:'Cinzel', serif;
-      font-size:36px;
-      text-align:center;
-      color:var(--dorado);
-      margin-bottom:12px;
-      letter-spacing:3px;
-    }
-
-    .section-sub{
-      text-align:center;
+      max-width:720px;
+      margin:auto;
+      font-size:17px;
       color:var(--gris);
-      max-width:700px;
-      margin:0 auto 60px;
-      font-size:15px;
+      line-height:1.7;
     }
 
-    .cards{
+    /* ================= FEATURES ================= */
+    .features{
       display:grid;
       grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-      gap:30px;
+      gap:32px;
+      padding:80px 60px 120px;
+      animation:fadeUp 1.4s ease;
     }
 
-    .card{
-      background:#151515;
-      border-radius:20px;
-      padding:30px;
+    .feature-card{
+      border:1px solid rgba(201,162,77,.25);
+      border-radius:18px;
+      padding:40px 30px;
       text-align:center;
-      border:1px solid rgba(201,162,77,.15);
+      text-decoration:none;
+      color:#fff;
+      transition:.4s ease;
+      position:relative;
+      overflow:hidden;
+    }
+
+    .feature-card::before{
+      content:"";
+      position:absolute;
+      inset:0;
+      background:radial-gradient(circle at top,rgba(201,162,77,.12),transparent 70%);
+      opacity:0;
       transition:.4s;
     }
 
-    .card:hover{
-      transform:translateY(-6px);
-      border-color:var(--dorado);
+    .feature-card:hover::before{
+      opacity:1;
     }
 
-    .card h3{
-      font-family:'Cinzel', serif;
-      font-size:20px;
+    .feature-card:hover{
+      transform:translateY(-8px);
+      box-shadow:0 25px 50px rgba(0,0,0,.6);
+    }
+
+    .feature-card h3{
+      font-family:'Cinzel',serif;
+      font-size:22px;
       color:var(--dorado);
       margin-bottom:12px;
+      letter-spacing:1px;
     }
 
-    .card p{
+    .feature-card p{
       font-size:14px;
-      color:#d0d0d0;
-      margin-bottom:20px;
-    }
-
-    /* ================= FOOTER ================= */
-    footer{
-      padding:40px 20px;
-      text-align:center;
       color:var(--gris);
-      border-top:1px solid rgba(201,162,77,.2);
+      line-height:1.6;
     }
 
-    footer span{
-      color:var(--dorado);
-    }
-
-    /* ================= ANIMATIONS ================= */
-    @keyframes fadeIn{
-      from{opacity:0;transform:translateY(20px)}
+    /* ================= ANIMACIONES ================= */
+    @keyframes fadeUp{
+      from{opacity:0;transform:translateY(40px)}
       to{opacity:1;transform:translateY(0)}
     }
 
-    /* ================= RESPONSIVE ================= */
+    @keyframes fadeDown{
+      from{opacity:0;transform:translateY(-40px)}
+      to{opacity:1;transform:translateY(0)}
+    }
+
+    /* ================= MOBILE ================= */
     @media(max-width:768px){
-      header{
-        padding:16px 24px;
-      }
-
-      .hero h1{
-        font-size:42px;
-      }
-
-      section{
-        padding:80px 24px;
-      }
+      header{padding:20px}
+      .hero h1{font-size:40px}
+      .features{padding:60px 20px}
     }
   </style>
 </head>
 
 <body>
 
-<!-- HEADER -->
-<header>
-  <div class="logo">
-    <img src="logo.png" alt="Velámour">
-    <span>VELÁMOUR</span>
-  </div>
+  <!-- HEADER -->
+  <header>
+    <img src="logotipo.png" alt="Velámour">
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="anillos.html">Anillos</a>
+      <a href="relojes.html">Relojes</a>
+    </nav>
+  </header>
 
-  <nav>
-    <a href="#">Inicio</a>
-    <a href="#anillos">Anillos</a>
-    <a href="#relojes">Relojes</a>
-  </nav>
-</header>
-
-<!-- HERO -->
-<section class="hero">
-  <div class="hero-content">
+  <!-- HERO -->
+  <section class="hero">
     <h1>VELÁMOUR</h1>
     <p>
-      Joyas creadas para parejas, momentos especiales  
-      y detalles con intención.  
-      Anillos en acero premium y relojes de alta calidad  
+      Una marca creada para parejas, momentos especiales y detalles con intención.
+      Anillos en acero inoxidable premium, relojes de alta calidad y accesorios
       que hablan por ti.
     </p>
+  </section>
 
-    <div class="hero-buttons">
-      <a href="#anillos" class="btn btn-primary">Ver Anillos</a>
-      <a href="#relojes" class="btn btn-outline">Ver Relojes</a>
-    </div>
-  </div>
-</section>
+  <!-- BOTONES / CATALOGOS -->
+  <section class="features">
 
-<!-- ANILLOS -->
-<section id="anillos">
-  <h2 class="section-title">Anillos</h2>
-  <p class="section-sub">
-    Anillos en acero inoxidable premium.  
-    Dama ajustable · Caballero por talla.  
-    Diseños con historia y significado.
-  </p>
-
-  <div class="cards">
-    <div class="card">
+    <!-- ANILLOS -->
+    <a href="anillos.html" class="feature-card">
       <h3>Colección Romántica</h3>
-      <p>Diseños únicos para promesas eternas.</p>
-    </div>
-    <div class="card">
+      <p>Diseños únicos para promesas eternas. Anillos ajustables y por talla.</p>
+    </a>
+
+    <!-- ESPECIALES -->
+    <a href="anillos.html#especiales" class="feature-card">
       <h3>Ediciones Especiales</h3>
-      <p>Inspirados en historias icónicas.</p>
-    </div>
-    <div class="card">
+      <p>Inspirados en historias icónicas como Rapunzel, Shrek y más.</p>
+    </a>
+
+    <!-- RELOJES -->
+    <a href="relojes.html" class="feature-card">
       <h3>Calidad Premium</h3>
-      <p>Resistentes, elegantes y duraderos.</p>
-    </div>
-  </div>
-</section>
+      <p>Relojes imponentes, resistentes y elegantes. Presencia que se nota.</p>
+    </a>
 
-<!-- RELOJES -->
-<section id="relojes">
-  <h2 class="section-title">Relojes</h2>
-  <p class="section-sub">
-    Relojes de alto impacto visual, diseño moderno  
-    y excelente calidad.  
-    El complemento perfecto para destacar.
-  </p>
-
-  <div class="cards">
-    <div class="card">
-      <h3>Diseño Moderno</h3>
-      <p>Estilo que impone presencia.</p>
-    </div>
-    <div class="card">
-      <h3>Alta Calidad</h3>
-      <p>Materiales resistentes y precisos.</p>
-    </div>
-    <div class="card">
-      <h3>Ediciones Exclusivas</h3>
-      <p>Modelos únicos y limitados.</p>
-    </div>
-  </div>
-	<div class="features">
-
-  <a href="anillos.html" class="feature-card">
-    <h3>Colección Romántica</h3>
-    <p>Diseños únicos para promesas eternas.</p>
-  </a>
-
-  <a href="anillos-especiales.html" class="feature-card">
-    <h3>Ediciones Especiales</h3>
-    <p>Inspirados en historias icónicas.</p>
-  </a>
-
-  <a href="calidad.html" class="feature-card">
-    <h3>Calidad Premium</h3>
-    <p>Resistentes, elegantes y duraderos.</p>
-  </a>
-
-</div>
-
-</section>
-
-<!-- FOOTER -->
-<footer>
-  <p>© 2026 <span>Velámour</span> · Detalles que sellan promesas</p>
-</footer>
+  </section>
 
 </body>
 </html>
